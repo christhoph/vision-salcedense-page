@@ -1,0 +1,31 @@
+---
+import OGPHead from "@/components/OGPHead.astro";
+import Header from "@/components/header/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <OGPHead title={title} />
+  </head>
+
+  <body>
+    <Header />
+
+    <slot />
+
+    <Footer />
+  </body>
+</html>

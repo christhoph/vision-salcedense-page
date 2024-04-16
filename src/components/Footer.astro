@@ -1,0 +1,36 @@
+---
+import FacebookIcon from "./icons/FacebookIcon.astro";
+import TwitterIcon from "./icons/TwitterIcon.astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-primary">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div
+      class="flex flex-col items-center py-10 sm:flex-row-reverse sm:justify-between"
+    >
+      <div class="flex gap-x-6">
+        <a
+          class="group"
+          aria-label="Facebook - Visión Salcedense"
+          href="https://www.facebook.com/Visi%C3%B3n-Salcedense-1447414595305718/"
+        >
+          <FacebookIcon />
+        </a>
+
+        <a
+          class="group"
+          aria-label="Twitter - Visión Salcedense"
+          href="https://twitter.com/visionsalcedenc"
+        >
+          <TwitterIcon />
+        </a>
+      </div>
+
+      <p class="mt-6 text-sm text-white text-center sm:mt-0">
+        Movimiento Político VISIÓN SALCEDENSE - Visión y Opción © {currentYear}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,14 @@
+---
+import type { SVGElementProps } from "@/utils";
+
+type Props = SVGElementProps;
+
+const props = Astro.props;
+---
+
+<svg
+  class="h-6 w-6 fill-white sm:fill-slate-200 sm:group-hover:fill-white"
+  {...props}
+>
+  <slot />
+</svg>

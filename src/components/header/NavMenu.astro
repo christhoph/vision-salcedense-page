@@ -1,0 +1,17 @@
+---
+import { MENU_ITEMS } from "@/utils";
+---
+
+<nav class="hidden lg:flex lg:items-center lg:gap-5">
+  {
+    MENU_ITEMS.map(({ route, label }) => (
+      <a
+        href={route}
+        aria-label={label}
+        class="relative rounded-lg px-3 py-2 text-sm text-white lg:text-slate-200 transition-colors delay-150 lg:hover:text-white hover:delay-0"
+      >
+        {label}
+      </a>
+    ))
+  }
+</nav>

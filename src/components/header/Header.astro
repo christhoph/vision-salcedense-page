@@ -1,0 +1,19 @@
+---
+import Logo from "./Logo.astro";
+import NavMenu from "./NavMenu.astro";
+import HambugerButton from "./HambugerButton.astro";
+---
+
+<header class="bg-primary">
+  <div
+    class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-50 flex justify-between py-8"
+  >
+    <a aria-label="Inicio" href="/">
+      <Logo />
+    </a>
+
+    <NavMenu />
+
+    <HambugerButton />
+  </div>
+</header>

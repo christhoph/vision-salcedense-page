@@ -1,9 +1,13 @@
 ---
+type Props = {
+  title: string;
+};
 
-const title = "Visión Salcedense | Salcedo";
+const { title } = Astro.props;
+
 const url = "https://www.visionsalcedense.com/";
-const description = "Visión Salcedense es un Movimiento Político que sostiene que la democracia es el mejor sistema de gobierno, que con sus principios permite el desarrollo de una sociedad pluralista y tolerante.";
-
+const description =
+  "Visión Salcedense es un Movimiento Político que sostiene que la democracia es el mejor sistema de gobierno, que con sus principios permite el desarrollo de una sociedad pluralista y tolerante.";
 ---
 
 <title>{title}</title>
@@ -21,4 +25,4 @@ const description = "Visión Salcedense es un Movimiento Político que sostiene 
 
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:card" content="summary_large_image" />
